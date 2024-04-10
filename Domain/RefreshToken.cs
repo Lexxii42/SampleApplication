@@ -1,10 +1,11 @@
 using System;
-
+using System.ComponentModel.DataAnnotations;
 
 namespace Domain
 {
     public class RefreshToken
     {
+        [Required, Key]
         public int Id { get; set; }
         public User.AppUser AppUser { get; set; }
         public string Token { get; set; }

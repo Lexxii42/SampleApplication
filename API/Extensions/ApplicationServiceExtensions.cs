@@ -38,7 +38,7 @@ namespace API.Extensions
 	            // Use connection string from file.
 	            //connStr = config.GetConnectionString("DefaultConnection");
 	            //options.UseSqlite(config.GetConnectionString("DefaultConnection"));
-	            options.UseMySQL(config.GetConnectionString("DefaultConnection"));
+	            options.UseSqlite(config.GetConnectionString("DefaultConnection"));
 	            //}
 	            // else
 	            // {
